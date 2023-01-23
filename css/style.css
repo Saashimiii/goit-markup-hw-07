@@ -659,8 +659,10 @@ nav {
     display: block;
 }
 
-.name-card:not(:last-child) {
-    margin-bottom: 72px;
+@media (max-width: 480px) {
+    .name-card:not(:last-child) {
+        margin-bottom: 72px;
+    }
 }
 
 
@@ -686,6 +688,7 @@ nav {
 /* desktop screen */
 
 @media screen and (min-width: 1200px) {
+
     .name {
         text-align: center;
         display: flex;
