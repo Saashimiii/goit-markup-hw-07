@@ -99,6 +99,22 @@ a {
     color: #4D5AE5;
 }
 
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
 /* Навігація  */
 
 nav {
@@ -1124,7 +1140,11 @@ nav {
 @media screen and (min-width:768px) {
     .signup-field {
     
-    flex-direction: column;
+    align-items: center;
+    }
+
+    .footer-form-input {
+        margin-right: 24px;
     }
     
 }
@@ -1175,10 +1195,6 @@ nav {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width:768) {
-    .footer-submit-btn {
-    }
-}
 
 
 .footer-submit-btn:hover, .footer-submit-btn:focus {
