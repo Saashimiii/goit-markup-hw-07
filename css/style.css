@@ -667,6 +667,8 @@ nav {
 
 
 .name-card {
+    margin: auto;
+    width: 264px;
     background-color: #fff;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -696,6 +698,7 @@ nav {
         gap: 30px;
     }
     .name-card {
+        
         width: calc((100% - 90px) / 4);
         background-color: #fff;
         border-radius: 0px 0px 4px 4px;
@@ -805,9 +808,9 @@ nav {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 40px;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     color: #212121;
 }
 
@@ -815,12 +818,49 @@ nav {
 
 .custom {
 
+    columns: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .custom {
+        columns: 3;
+    }
+
+    .customers-name {
+        width: 169px;
+        margin-right: 24px;
+    }
+    .customers-name:nth-child(2n + 1){
+        margin-bottom: 72px;
+    } 
+    
+
+}
+
+@media screen and (min-width: 1200px) {
+    .custom {
     display: flex;
     justify-content: space-between;
+    }
+}
+
+@media (max-width:480px) {
+    .customers-name{
+        margin-bottom: 72px;
+    }
+    
+    .customers-name:nth-child(3n) {
+        margin-bottom: 0;
+    }
 }
 
 
+
+
+
 .customers-link {
+    margin: auto;
+
     display: flex;
     justify-content: center;
     align-items: center;
