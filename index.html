@@ -22,6 +22,14 @@
     <header>
         <div class="container head">
                 <a href="./index.html" class="logo"><span class="color-logo">Web</span>Studio</a>
+                <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu">
+                <svg class="menu-icon" width="32" height="22">
+                    <use href="./images/icons.svg/burger-menu.svg#icon-burger"></use>
+                  </svg>
+              </button>
                 <nav class="header-nav">
                 <ul class="site-nav list">
                     <li class="item"> <a href="./index.html" class="current">Studio</a> </li>
@@ -35,14 +43,7 @@
 
                 <li class="item"> <a href="tel:+110001111111">+11 (000) 111 11 11</a></li>
             </ul>
-            <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu">
-            <svg class="menu-icon" width="32" height="22">
-                <use href="./images/icons/icons.svg#menu"></use>
-              </svg>
-          </button>
+           
         </div>
         
         
@@ -185,7 +186,10 @@
                 <h2 class="title">Our Team</h2>
                 <ul class="name list">
                     <li class="name-card">
-                        <img width="264" src="./images/mark.jpg" alt="дизайнер">
+                        <img width="264"
+                        srcset="./images/team/imgmob@1xMark.jpg 1x, ./images/team/imgmob@2xMark.jpg 2x "
+                        src="./images/team/imgmob@1xMark.jpg" 
+                        alt="дизайнер">
                         <div class="position">
                             <h3 class="name-style">Mark Guerrero</h3>
                             <p class="name-pos">Product Designer</p>
@@ -224,7 +228,10 @@
                         </div>
                     </li>
                     <li class="name-card">
-                        <img width="264"  src="./images/tom.jpg" alt="розробник">
+                        <img width="264"  
+                        srcset="./images/team/imgmob@1xTom.jpg 1x, ./images/team/imgmob@2xTom.jpg 2x"
+                        src="./images/team/imgmob@1xTom.jpg" 
+                        alt="розробник">
                         <div class="position">
                             <h3 class="name-style">Tom Ford</h3>
                             <p class="name-pos">Frontend Developer</p>
@@ -265,7 +272,10 @@
                         </div>
                     </li>
                     <li class="name-card">
-                        <img width="264"  src="./images/camila.jpg" alt="маркетинг">
+                        <img width="264"  
+                        srcset="./images/team/imgmob@1xCamilla.jpg 1x, ./images/team/imgmob@2xCamilla.jpg 2x"
+                        src="./images/team/imgmob@1xCamilla.jpg" 
+                        alt="маркетинг">
                         <div class="position">
                             <h3 class="name-style">Camila Garcia</h3>
                             <p class="name-pos">Marketing</p>
@@ -306,7 +316,10 @@
                         </div>
                     </li>
                     <li class="name-card">
-                        <img width="264"  src="./images/daniel.jpg" alt="UI дизайнер">
+                        <img width="264"  
+                        srcset="./images/team/imgmob@1xDaniel.jpg 1x, ./images/team/imgmob@2xDaniel.jpg 2x"
+                        src="./images/team/imgmob@1xDaniel.jpg" 
+                        alt="UI дизайнер">
                         <div class="position">
                             <h3 class="name-style">Daniel Wilson</h3>
                             <p class="name-pos">UI Designer</p>
@@ -402,7 +415,66 @@
 
     </main>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-button-close js-close-menu">
+          <svg width="24" height="24" class="menu-modal-close">
+            <use href="./images/icons.svg/close.svg#icon-close"></use>
+          </svg>
+        
+        </button>
+  
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Studio</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Portfolio</a></li>
+          <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
+        </ul>
 
+        <ul class="mobile-contacts list">
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link accent link" href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-contacts-item">
+                <a class="mobile-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="mobile-team-soclist list">
+            <li class="mobile-team-socitem">
+                <a class="mobile-team-soclink" href="#">
+                    <svg class="mobile-team-icon">
+                        <use 
+                       width="24" height="24" href="./images/icons.svg/symbol-soc.svg#icon-inst"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-team-socitem">
+                <a class="mobile-team-soclink" href="#">
+                    <svg class="mobile-team-icon">
+                        <use width="24" height="24" href="./images/icons.svg/symbol-social-defs.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-team-socitem">
+                <a class="mobile-team-soclink" href="">
+                    <svg class="mobile-team-icon">
+                        <use href="./images/icons.svg/symbol-social-defs.svg#icon-facebook"
+                            width="24" height="24"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-team-socitem">
+                <a class="mobile-team-soclink" href="">
+                    <svg class="mobile-team-icon">
+                        <use href="./images/icons.svg/symbol-social-defs.svg#icon-linkedin"
+                            width="24" height="24"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        
+
+    </div>
 
     <!--підвал-->
 
@@ -467,7 +539,7 @@
         </div>
     </footer>  
 
-
+    
     <script src="./js/modal.js"></script>
     <script
       defer

@@ -99,21 +99,7 @@ a {
     color: #4D5AE5;
 }
 
-.menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
+
 
 /* Навігація  */
 
@@ -127,6 +113,172 @@ nav {
     margin-left: 93px;
 
 }
+
+/* меню мобільне */
+
+.head {
+    display: flex;
+}
+
+@media screen and (min-width:768px) {
+    .menu-toggle {
+        visibility: hidden;
+    }
+
+    .menu-container {
+        visibility: hidden;
+    }
+}
+
+
+
+.menu-modal-close {
+    width: 24px;
+    height: 24px;
+
+}
+
+.menu-button-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 50%;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.menu-toggle {
+    margin-left: auto;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    padding-top: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px rgba(46, 47, 66, 0.08);
+    z-index: 999;
+  
+     transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+
+  .mobile-menu {
+    margin-bottom: auto;
+  }
+
+  .mobile-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+
+  }
+
+  .mobile-contacts-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .mobile-contacts {
+    margin-bottom: 48px;
+  }
+
+  .mobile-contacts-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+
+  .mobile-contacts-link.accent {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: #4D5AE5;
+  }
+
+  .mobile-team-soclist {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  .mobile-team-soclink {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-team-icon {
+    width: 24px;
+    height: 24px;
+}
+
+  
+  .mobile-menu-link {
+    display: block;
+    padding: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu-link:hover, .mobile-menu-link:focus {
+    color: #404BBF;
+  }
 
 
 /* меню мобільне */
@@ -266,13 +418,63 @@ nav {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+
+    /* mobile */
+
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/people_back.jpg');
+        url('/images/hero/Dark-bgmob@1xhero.jpg');
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .overlay {
+       
+        background-image:  linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/Dark-bgmob@2xhero.jpg') ;
+    }
+  }
+
+    /* screen >= 481px */
+
+  @media screen and (min-width: 768px) {
+    .overlay {
+        
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/Dark-bgtab@1xhero.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .overlay {
+        
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/Dark-bgtab@2xhero.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .overlay {
+        
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/people-office\ 1pc@1xhero.jpg');
+    }
+  }
+
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .overlay {
+        
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('/images/hero/people-office\ 1pc@2xhero.jpg');
+    }
+  }
+
+
+  /* screen >= 769 */
 
 
 
@@ -693,6 +895,13 @@ nav {
 .name img {
     display: block;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .name.list {
     display: flex;
     flex-wrap: wrap;
@@ -1113,10 +1322,6 @@ nav {
         width: 453px;
         
     }
-
-    .footer-social-text {
-        text-align: center;
-    }
 }
 
 @media screen and (min-width:1200px) {
@@ -1131,7 +1336,6 @@ nav {
 .signup-field {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
 
@@ -1139,14 +1343,14 @@ nav {
 
 @media screen and (min-width:768px) {
     .signup-field {
-    
+    margin-left: -40px;
     align-items: center;
     }
 
     .footer-form-input {
         margin-right: 24px;
     }
-    
+
 }
 
 @media screen and (min-width:1200px) {
