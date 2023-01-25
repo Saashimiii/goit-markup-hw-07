@@ -55,7 +55,7 @@
         <section class="main-inf overlay">
             <div class="container">
 
-                <h1 class="main-text">Effective Solutions for Your Business</h1>
+                <h1 class="main-text">Effective Solutions For Your Business </h1>
                 <button type="button" class="button-buy" data-modal-open>Order Service</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal-window">
@@ -186,9 +186,16 @@
                 <h2 class="title">Our Team</h2>
                 <ul class="name list">
                     <li class="name-card">
-                        <img width="264"
-                        srcset="./images/team/imgmob@1xMark.jpg 1x, ./images/team/imgmob@2xMark.jpg 2x "
-                        src="./images/team/imgmob@1xMark.jpg" 
+                        <img class="gallery-img"
+                        width="264"
+                        srcset="/images/team/imgmark_mob_264.jpg 264w, 
+                        /images/team/imgmark_mob_528.jpg 528w,  
+                        /images/team/imgmark_tab_264.jpg 264w,
+                        /images/team/imgmark_tab_528.jpg 528w
+                        /images/team/imgmark_desk_264.jpg 264w
+                        /images/team/imgmark_desk_528.jpg 528w"
+                        sizes="(min-width:1200px) 264px, (min-width:678px) 264px, (min-width:480px) 264px, 100vw "
+                        src="/images/team/imgmark_mob_264.jpg" 
                         alt="дизайнер">
                         <div class="position">
                             <h3 class="name-style">Mark Guerrero</h3>
@@ -229,8 +236,8 @@
                     </li>
                     <li class="name-card">
                         <img width="264"  
-                        srcset="./images/team/imgmob@1xTom.jpg 1x, ./images/team/imgmob@2xTom.jpg 2x"
-                        src="./images/team/imgmob@1xTom.jpg" 
+                        srcset="/images/team/imgtom_mob_264.jpg 1x, /images/team/imgtom_mob_528.jpg 2x"
+                        src="/images/team/imgtom_mob_264.jpg" 
                         alt="розробник">
                         <div class="position">
                             <h3 class="name-style">Tom Ford</h3>
@@ -239,8 +246,18 @@
                                 <li class="team-socitem">
                                     <a class="team-soclink" href="#">
                                         <svg class="team-icon">
-                                            <use href="./images/icons.svg/symbol-social-defs.svg#icon-instagram"
-                                                width="16" height="16"></use>
+                                            <use 
+                                            srcset=
+                                            "/images/team/imgtom_mob_264.jpg 264w, 
+                                             /images/team/imgtom_mob_528.jpg 528w,  
+                                             /images/team/imgtom_tab_264.jpg 264w,
+                                             /images/team/imgtom_tab_528.jpg 528w
+                                             /images/team/imgtom_desk_264.jpg 264w
+                                             /images/team/imgtom_desk_528.jpg 528w"
+                                            sizes="(min-width:1200px) 264px, (min-width:678px) 264px, (min-width:480px) 264px, 100vw "
+                                            href="./images/icons.svg/symbol-social-defs.svg#icon-instagram"
+                                                width="16" 
+                                                height="16"></use>
                                         </svg>
                                     </a>
                                 </li>
@@ -273,8 +290,15 @@
                     </li>
                     <li class="name-card">
                         <img width="264"  
-                        srcset="./images/team/imgmob@1xCamilla.jpg 1x, ./images/team/imgmob@2xCamilla.jpg 2x"
-                        src="./images/team/imgmob@1xCamilla.jpg" 
+                        srcset="
+                        /images/team/imgcamilla_mob_264.jpg 264w, 
+                        /images/team/imgcamilla_mob_528.jpg 528w,  
+                        /images/team/imgcamilla_tab_264.jpg 264w,
+                        /images/team/imgcamilla_tab_528.jpg 528w
+                        /images/team/imgcamilla_desk_264.jpg 264w
+                        /images/team/imgcamilla_desk_528.jpg 528w"
+                        sizes="(min-width:1200px) 264px, (min-width:678px) 264px, (min-width:480px) 264px, 100vw "
+                        src="/images/team/imgcamilla_mob_264.jpg" 
                         alt="маркетинг">
                         <div class="position">
                             <h3 class="name-style">Camila Garcia</h3>
@@ -317,8 +341,15 @@
                     </li>
                     <li class="name-card">
                         <img width="264"  
-                        srcset="./images/team/imgmob@1xDaniel.jpg 1x, ./images/team/imgmob@2xDaniel.jpg 2x"
-                        src="./images/team/imgmob@1xDaniel.jpg" 
+                        srcset="
+                        /images/team/imgdan_mob_264.jpg 264w, 
+                        /images/team/imgdan_mob_528.jpg 528w,  
+                        /images/team/imgdan_tab_264.jpg 264w,
+                        /images/team/imgdan_tab_528.jpg 528w
+                        /images/team/imgdan_desk_264.jpg 264w
+                        /images/team/imgdan_desk_528.jpg 528w"
+                        sizes="(min-width:1200px) 264px, (min-width:678px) 264px, (min-width:480px) 264px, 100vw "
+                        src="/images/team/imgdan_mob_264.jpg" 
                         alt="UI дизайнер">
                         <div class="position">
                             <h3 class="name-style">Daniel Wilson</h3>
@@ -416,6 +447,7 @@
     </main>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
+        
         <button class="menu-button-close js-close-menu">
           <svg width="24" height="24" class="menu-modal-close">
             <use href="./images/icons.svg/close.svg#icon-close"></use>
