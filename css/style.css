@@ -454,7 +454,7 @@ nav {
     /* mobile */
 
     background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('/images/hero/mob@1xhero.jpg');
+        url('/images/mob@1xhero.jpg');
 
     background-position: center;
     background-size: cover;
@@ -467,7 +467,7 @@ nav {
     .overlay {
        
         background-image:  linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url('/images/hero/mob@2xhero.jpg') ;
+        url('/images/mob@2xhero.jpg') ;
     }
   }
 
@@ -477,7 +477,7 @@ nav {
     .overlay {
         
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url('/images/hero/tab@1xhero.jpg');
+        url('/images/tab@1xhero.jpg');
     }
   }
 
@@ -487,7 +487,7 @@ nav {
     .overlay {
         
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url('/images/hero/tab@2xhero.jpg');
+        url('/images/tab@2xhero.jpg');
     }
   }
 
@@ -495,7 +495,7 @@ nav {
     .overlay {
         
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url('/images/hero/desk@1xhero.jpg');
+        url('/images/desk@1xhero.jpg');
     }
   }
 
@@ -507,7 +507,7 @@ nav {
     .overlay {
         
         background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-        url('/images/hero/desk@2xhero.jpg');
+        url('/images/desk@2xhero.jpg');
     }
   }
 
