@@ -1222,7 +1222,8 @@ img {
         margin-right: 24px;
     }
 
-    .footer-social-text {
+    .footer-submit .footer-social-text {
+        display: flex;
         justify-content: flex-start;
     }
 
@@ -1268,9 +1269,7 @@ img {
     text-transform: uppercase;
 }
 
-@media screen and (min-width:768px) {
 
-}
 
 @media screen and (min-width:1200px) {
     .logo-footer {
@@ -1283,12 +1282,15 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 72px;
 }
 
 
 @media screen and (min-width:768px) {   
-
+    .footer-social {
+        align-items: flex-start;
+    }
 }
 
 @media screen and (min-width:1200px) {
@@ -1297,7 +1299,9 @@ img {
         margin-bottom: 0;
     }
 
-    
+    .footer-submit .footer-social-text {
+        margin-left: 80px;
+    }
 }
 
 .footer-social-text {
@@ -1412,7 +1416,7 @@ img {
     .footer-submit {
         display: inline-block;
         position: relative;
-        
+    
         padding: 0;
     }
 }
@@ -1422,7 +1426,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 24px;
 
 }
 
@@ -1432,9 +1436,7 @@ img {
     align-items: center;
     }
 
-    .footer-form-input {
-        margin-right: 24px;
-    }
+   
 
 }
 
@@ -1442,7 +1444,8 @@ img {
     .signup-field {
         position: relative;
         display: flex;
-        gap: 12px;
+        flex-wrap: nowrap;
+        width: 453px;
         margin-left: 80px;
     
     }
