@@ -838,6 +838,11 @@ nav {
     }
 }
 
+@media screen and (max-width: 1158px) {
+.main-list .item:nth-child(2n + 1) {
+    margin-bottom: 72px;
+}
+}
 
 
 @media screen and (min-width:1200px) {
@@ -906,9 +911,16 @@ nav {
 
 }
 
+
 @media screen and (min-width: 768px) {
     .main-h {
     text-align: start;
+}
+
+
+.main-list {
+    gap: 24px;
+    columns: 2;
 }
 }
 
