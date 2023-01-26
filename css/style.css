@@ -1408,7 +1408,7 @@ img {
     .footer-submit {
         display: block;
         width: 453px;
-        
+        margin-right: 40px;
     }
 }
 
@@ -1430,15 +1430,7 @@ img {
 
 }
 
-@media screen and (min-width:768px) {
-    .signup-field {
-    margin-left: -40px;
-    align-items: center;
-    }
 
-   
-
-}
 
 @media screen and (min-width:1200px) {
     .signup-field {
@@ -1487,6 +1479,7 @@ img {
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 
 
